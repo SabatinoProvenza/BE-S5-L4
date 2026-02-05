@@ -4,7 +4,8 @@ import jakarta.persistence.*;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-@MappedSuperclass
+@Entity
+@Inheritance(strategy = InheritanceType.JOINED)
 @ToString
 @NoArgsConstructor
 public abstract class MenuItem {
