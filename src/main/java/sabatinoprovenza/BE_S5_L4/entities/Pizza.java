@@ -38,8 +38,7 @@ public class Pizza extends MenuItem {
         }
     }
 
-    @Override
-    public double getPrice() {
+    public double getTotalPrice() {
         double total = super.getPrice();
 
         for (Topping t : toppings) {
@@ -49,8 +48,8 @@ public class Pizza extends MenuItem {
         return total;
     }
 
-    @Override
-    public int getCalories() {
+
+    public int getTotalCalories() {
         int total = super.getCalories();
 
         for (Topping t : toppings) {
@@ -60,8 +59,8 @@ public class Pizza extends MenuItem {
         return total;
     }
 
-    @Override
-    public String getName() {
+
+    public String getDisplayName() {
         String name = super.getName();
 
         for (Topping t : toppings) {
