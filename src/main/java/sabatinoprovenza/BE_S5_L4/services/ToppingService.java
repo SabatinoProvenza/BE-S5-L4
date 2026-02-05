@@ -1,9 +1,11 @@
 package sabatinoprovenza.BE_S5_L4.services;
 
-public class ToppingService {
-    private final ToppingService toppingService;
+import sabatinoprovenza.BE_S5_L4.repositories.ToppingRepository;
 
-    public ToppingService(ToppingService toppingService) {
-        this.toppingService = toppingService;
+public class ToppingService {
+    private final ToppingRepository toppingRepository;
+
+    public ToppingService(ToppingRepository toppingRepository) {
+        this.toppingRepository = toppingRepository;
     }
 }
